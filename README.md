@@ -1,18 +1,31 @@
-# Pepito2k Openchonker
+# pepito2k/openchonker
 
-## How do I install these formulae?
+Homebrew tap for [OpenChonker](https://github.com/pepito2k/OpenChonker), an
+open-source companion for ChonkerKeys macropads.
 
-`brew install pepito2k/openchonker/<formula>`
+## Install
 
-Or `brew tap pepito2k/openchonker` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "pepito2k/openchonker"
-brew "<formula>"
+```bash
+brew install pepito2k/openchonker/openchonker
 ```
 
-## Documentation
+Or:
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```bash
+brew tap pepito2k/openchonker
+brew install openchonker
+```
+
+That builds the `chonker` CLI from source and installs `OpenChonker.app` into
+the Homebrew prefix. Open the menu bar companion with:
+
+```bash
+open "$(brew --prefix)/opt/openchonker/OpenChonker.app"
+```
+
+Then grant **Accessibility** (and Device Control) to **OpenChonker** in System
+Settings.
+
+## Formulae
+
+- `openchonker` — CLI (`chonker`) plus the macOS menu bar app
