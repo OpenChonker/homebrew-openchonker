@@ -1,31 +1,21 @@
-# pepito2k/openchonker
+# OpenChonker tap
 
-Homebrew tap for [OpenChonker](https://github.com/pepito2k/OpenChonker), an
-open-source companion for ChonkerKeys macropads.
-
-## Install
+Homebrew tap for [OpenChonker](https://github.com/OpenChonker/OpenChonker).
 
 ```bash
-brew install pepito2k/openchonker/openchonker
+brew tap OpenChonker/openchonker
+brew install --cask openchonker
 ```
 
-Or:
+Installs a notarized `/Applications/OpenChonker.app` and the `chonker` CLI
+(Apple Silicon). Grant Accessibility (and Device Control) to **OpenChonker**.
+After `brew upgrade --cask openchonker`, reopen `/Applications/OpenChonker.app`
+so macOS keeps bundle id `dev.openchonker.app`.
 
-```bash
-brew tap pepito2k/openchonker
-brew install openchonker
-```
+Until a GitHub Release contains `OpenChonker-macos.zip`, the cask 404s. Build
+locally from the main repo with `./scripts/bundle-macos.sh`.
 
-That builds the `chonker` CLI from source and installs `OpenChonker.app` into
-the Homebrew prefix. Open the menu bar companion with:
+## Formula
 
-```bash
-open "$(brew --prefix)/opt/openchonker/OpenChonker.app"
-```
-
-Then grant **Accessibility** (and Device Control) to **OpenChonker** in System
-Settings.
-
-## Formulae
-
-- `openchonker` — CLI (`chonker`) plus the macOS menu bar app
+`brew install openchonker` still builds the CLI (and an ad-hoc `.app`) from
+source. Prefer the cask on Apple Silicon after a notarized `v*` release.
