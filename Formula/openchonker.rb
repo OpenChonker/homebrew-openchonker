@@ -1,8 +1,8 @@
 class Openchonker < Formula
   desc "Open-source companion for ChonkerKeys macropads"
   homepage "https://github.com/pepito2k/OpenChonker"
-  url "https://github.com/pepito2k/OpenChonker/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "5a87fed092a73044305c7ac6f42d3bb77fd74055d9d3c2271adde2825858fe77"
+  url "https://github.com/pepito2k/OpenChonker/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "0367da842ee3c1261bfca4a72ca2b3337535b47aadb35aa14e0c5db20a8374b6"
   license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/pepito2k/OpenChonker.git", branch: "main"
 
