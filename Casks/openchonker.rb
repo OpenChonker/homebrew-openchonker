@@ -1,6 +1,6 @@
 cask "openchonker" do
-  version "0.1.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  version "0.1.1"
+  sha256 "854bca742c1f6a7f6f9947c52e630146fa682ae3c336586d970b3004b3cc3078"
 
   url "https://github.com/OpenChonker/OpenChonker/releases/download/v#{version}/OpenChonker-macos.zip"
   name "OpenChonker"
